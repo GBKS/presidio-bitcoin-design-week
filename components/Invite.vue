@@ -15,7 +15,6 @@
 @use "@/assets/css/mixins.scss";
 
 .invite {
-  border-top: 1px solid rgba(var(--frontRGB), 0.1);
   max-width: 840px;
   padding-left: 10px;
   padding-right: 10px;
@@ -28,13 +27,13 @@
     font-family: 'Playfair Display Variable Italic', serif;
     font-style: italic;
     font-weight: 400;
-    @include mixins.r('font-size', 40, 48);
+    @include mixins.r('font-size', 27, 48);
   }
 
   p {
     line-height: 1.5;
     @include mixins.rs(
-      ('font-size', 21, 21),
+      ('font-size', 19, 21),
       ('margin-top', 25, 50)
     );
     
