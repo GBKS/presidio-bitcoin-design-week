@@ -1,0 +1,157 @@
+@use "mixins";
+@use "animations";
+
+html {
+  font-family: 'Rubik Variable', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+}
+
+@supports (font-variation-settings: normal) {
+  html {
+    font-family: 'Rubik Variable', sans-serif;
+  }
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+}
+
+body {
+  // background-color: var(--siteBackground);
+  transition: all 100ms animations.$ease;
+
+  &.-dark {
+
+  }
+
+  > div {
+    // width: 100%;
+    // display: flex;
+    // flex-direction: column;
+    // align-items: stretch;
+  }
+}
+
+html, 
+p {
+  margin: 0;
+  font-weight: 400;
+  line-height: 1.6;
+  letter-spacing: -0.05rem;
+  color: var(--front);
+  text-wrap: balance;
+}
+
+p {
+  b {
+    font-weight: 600;
+  }
+
+  a {
+    color: rgba(var(--frontRGB), 0.75);
+  }
+}
+
+// Headers
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.-h1,
+.-h2,
+.-h3,
+.-h4,
+.-h5,
+.-h6 {
+  margin: 0;
+  font-weight: 400;
+  line-height: 1.2;
+  // letter-spacing: -0.05rem;
+  color: var(--front);
+}
+
+h1, 
+.-h1 {
+	@include mixins.r('font-size', 64, 64);
+}
+
+h2, 
+.-h2 {
+	@include mixins.r('font-size', 48, 48);
+}
+
+h3, 
+.-h3 {
+	@include mixins.r('font-size', 32, 32);
+}
+
+h4, 
+.-h4 {
+	@include mixins.r('font-size', 26, 26);
+}
+
+h5, 
+.-h5 {
+	@include mixins.r('font-size', 22, 22);
+}
+
+h6, 
+.-h6 {
+	@include mixins.r('font-size', 18, 18);
+}
+
+// Body
+
+.-p1,
+.-p2,
+.-p3,
+.-p4,
+.-p5,
+.-p6 {
+  margin: 0;
+  font-weight: 300;
+  color: var(--front);
+}
+
+.-p1 {
+	@include mixins.r('font-size', 27, 27);
+}
+
+.-p2 {
+	@include mixins.r('font-size', 24, 24);
+}
+
+.-p3 {
+	@include mixins.r('font-size', 20, 20);
+}
+
+.-p4 {
+	@include mixins.r('font-size', 16, 16);
+}
+
+.-p5 {
+	@include mixins.r('font-size', 14, 14);
+}
+
+.-p6 {
+	@include mixins.r('font-size', 12, 12);
+}
+
+.-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  @include mixins.rs(
+    ('padding-left', 20, 50),
+    ('padding-right', 20, 50),
+    ('padding-top', 30, 50),
+    ('padding-bottom', 30, 50)
+  );
+}
