@@ -5,7 +5,7 @@
       <p v-if="expanded" v-html="info.description" />
       <p v-if="!expanded">
         {{ info.summary }} 
-        <button @click="expanded = true">more</button>
+        <button v-if="info.description" @click="expanded = true">Read more</button>
       </p>
     </div>
     <div class="meta">
@@ -55,6 +55,7 @@ const expanded = ref(false)
         border: none;
         font-family: variables.$sansSerifFont;
         text-decoration: underline;
+        cursor: pointer;
       }
     }
   }
