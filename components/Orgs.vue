@@ -30,7 +30,7 @@
             href="https://twitter.com/PresidioBitcoin"
             target="_blank"
             rel="noopener noreferrer"
-          >Social media</a>
+          >Find us on X</a>
         </p>
       </div>
       <div class="item -bitcoin-design">
@@ -61,7 +61,7 @@
             href="https://twitter.com/bitcoin_design"
             target="_blank"
             rel="noopener noreferrer"
-          >Social media</a>
+          >Find us on X</a>
         </p>
       </div>
     </div>

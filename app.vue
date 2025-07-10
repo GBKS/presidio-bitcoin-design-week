@@ -88,15 +88,15 @@ main {
     width: 100%;
   }
 
-  @include mixins.media-query(small) {
-    .sentinel,
-    .agenda-button {
-      display: none;
-    }
-  }
+  // @include mixins.media-query(small) {
+  //   .sentinel,
+  //   .agenda-button {
+  //     display: none;
+  //   }
+  // }
 
-  @include mixins.media-query(medium-up) {
-  .sentinel {
+  // @include mixins.media-query(medium-up) {
+    .sentinel {
       width: 1px;
       height: 1px;
       pointer-events: none;
@@ -131,7 +131,7 @@ main {
         top: 20px;
       }
     }
-  }
+  // }
 }
 
 </style>

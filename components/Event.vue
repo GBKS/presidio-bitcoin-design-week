@@ -93,8 +93,8 @@ const expanded = ref(false)
       p {
         font-family: 'Playfair Display Variable Italic', serif;
         font-style: italic;
-        line-height: 1.2;
-        @include mixins.r('font-size', 24, 30);
+        line-height: 1.3;
+        @include mixins.r('font-size', 24, 27);
       }
 
       .options {
