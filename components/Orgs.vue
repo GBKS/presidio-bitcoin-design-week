@@ -81,6 +81,7 @@
 .orgs {
   width: 100%;
   max-width: 1000px;
+  box-sizing: border-box;
   @include mixins.rs(
     ('padding-left', 15, 30),
     ('padding-right', 15, 30),
@@ -125,7 +126,8 @@
           @include mixins.r('font-size', 24, 27);
 
           &:hover {
-            text-decoration: underline;
+            transition: color 100ms animations.$ease;
+            color: var(--primary);
           }
         }
 
@@ -140,7 +142,14 @@
         a {
           color: var(--front);
           text-decoration: underline;
+          text-decoration-color: rgba(var(--frontRGB), 0.2);
           @include mixins.r('font-size', 21, 24);
+
+          &:hover {
+            transition: color 100ms animations.$ease;
+            color: var(--primary);
+            text-decoration-color: var(--primary);
+          }
         }
       }
     }

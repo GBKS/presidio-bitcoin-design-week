@@ -42,7 +42,7 @@ const eventCopy = [
     date: "September 15 <wbr>6:30pm to 9pm",
     button: {
       label: "Reserve your spot",
-      url: "#"
+      url: "https://lu.ma/qc1qpby0"
     }
   },
   {
@@ -52,7 +52,7 @@ const eventCopy = [
     date: "September 16 <wbr>6:30pm to 9pm",
     button: {
       label: "Reserve your spot",
-      url: "#"
+      url: "https://lu.ma/knpgd19x"
     }
   },
   {
@@ -62,25 +62,29 @@ const eventCopy = [
     date: "September 17 <wbr>6:30pm to 9pm",
     button: {
       label: "Reserve your spot",
-      url: "#"
+      url: "https://lu.ma/pl2haukv"
     }
   },
   {
     title: "Deep Dive: The Grand Challenges of Bitcoin Design",
-    summary: "Designing in Bitcoin is notoriously hard. Decentralization. Self-sovereignty. Designing for decades / centuries. Adversarial mindset. Presents all kinds of issues both big and small, but all important. If we want to onboard the next billion users we need to overcome these design challenges. Silicon Valley designers - we need your help to get there. Bring your good ideas. We will design and prototype solutions together all day long. ",
+    summary: "Designing in Bitcoin is notoriously hard.<br/><br/>Decentralization. Self-sovereignty. Resilience. Adversarial thinking. Trust minimization.<br/><br/>These features, deeply embedded into bitcoin’s technical architecture as well as its ethos, form the central design constraints we work within. Can we design products and experiences that bring bitcoin to billions of users: while staying true to these values? while delivering on the promise of what this future money can be? while remaining as simple as possible? ",
+    description: "Designing in Bitcoin is notoriously hard.<br/><br/>Decentralization. Self-sovereignty. Resilience. Adversarial thinking. Trust minimization.<br/><br/>These features, deeply embedded into bitcoin’s technical architecture as well as its ethos, form the central design constraints we work within. Can we design products and experiences that bring bitcoin to billions of users: while staying true to these values? while delivering on the promise of what this future money can be? while remaining as simple as possible?<br/><br/>This full-day Deep Dive invites Silicon Valley designers to spend a day with Bitcoin designers to examine these questions through the lens of the Grand Challenges of Bitcoin Design—a handful of the most impactful and deceptively tricky design problems in bitcoin like: bitcoin’s branding, on-ramps and off-ramps, self-custody, identity & addressing schemes, units and quantities and privacy. We’ll study these problems together and work in small groups to bring design solutions to light.<br/><br/>There will also be an opportunity to hear from the bitcoin startups working out of Presidio Bitcoin that are pushing the frontier of bitcoin product development forward.<br/><br/>Join us for a day of collaborative problem solving.",
     date: "September 18 <wbr>9:30am to 5pm",
+    disclaimer: "Admissions is free. Space is limited.",
     button: {
       label: "Apply to attend",
-      url: "#"
+      url: "https://tally.so/r/wbRO1E"
     }
   },
   {
     title: "Deep Dive: Redesigning Silicon Valley with Bitcoin",
-    summary: "What if the tech products of Silicon Valley had bitcoin deeply integrated into them? What would that look like? How would they behave? Let’s help them catch up! Let’s do the design exploration and heavy lifting and bring to life all kinds of new experiences that bitcoin could provide inside the products we are so familiar with. Vibe-coding encouraged!",
+    summary: "The big tech products of Silicon Valley largely shape our modern digital lives at massive scale.<br/><br/>Now let’s hit the fast-forward button.<br/><br/>What happens when we add bitcoin to the mix?<br/><br/>How might these products change? How would they look and feel? How would they behave? What new possibilities present themselves when borderless, permission-less value transfer is at every user’s fingertips? At every AI agent's fingertips? ",
+    description: "The big tech products of Silicon Valley largely shape our modern digital lives at massive scale.<br/><br/>Now let’s hit the fast-forward button.<br/><br/>What happens when we add bitcoin to the mix?<br/><br/>How might these products change? How would they look and feel? How would they behave? What new possibilities present themselves when borderless, permission-less value transfer is at every user’s fingertips? At every AI agent's fingertips?<br/><br/>This full-day Deep Dive is an opportunity to jump in, get creative and imagine this future together.<br/><br/>We’ll spend the day working in small teams inventing, sketching and vibe-coding to life prototypes of the wild future that will emerge when Future Money collides with the Silicon Valley products we all know and love.",
     date: "September 19 <wbr>9:30am to 5pm",
+    disclaimer: "Admissions is free. Space is limited.",
     button: {
       label: "Apply to attend",
-      url: "#"
+      url: "https://tally.so/r/wbRO1E"
     }
   }
 ]
@@ -94,6 +98,7 @@ const eventCopy = [
 
 .agenda {
   width: 100%;
+  background-position: top center;
 
   > div {
     display: flex;
