@@ -80,6 +80,7 @@ const expanded = ref(false)
           font-family: variables.$sansSerifFont;
           text-decoration: underline;
           cursor: pointer;
+          color: var(--front);
         }
 
         &.-disclaimer {
