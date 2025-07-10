@@ -16,8 +16,8 @@
 
 .invite {
   max-width: 840px;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
   @include mixins.rs(
     ('padding-top', 50, 100),
     ('padding-bottom', 50, 100)

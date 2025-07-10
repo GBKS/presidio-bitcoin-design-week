@@ -101,7 +101,7 @@ const content = computed(() => {
     }
 
     .copy {
-      padding: 50px 10px;
+      padding: 50px 20px;
     }
   }
 

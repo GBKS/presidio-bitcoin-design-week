@@ -142,11 +142,7 @@ const expanded = ref(false)
   }
 
   @include mixins.media-query(small) {
-    padding: 0 15px;
-
-    .copy {
-      
-    }
+    padding: 0 20px;
 
     .meta {
       p {
