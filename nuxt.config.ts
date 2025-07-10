@@ -56,6 +56,9 @@ export default defineNuxtConfig({
         { rel: "shortcut icon", href: "/favicon.ico" },
         { rel: "apple-touch-icon", sizes: "180x180", href: "/apple-touch-icon.png" },
         { rel: "manifest", href: "/site.webmanifest" }
+      ],
+      script: [
+        { defer: true, src:"https://info.bitcoin.design/script.js", "data-website-id": "bcfff6db-f063-4e0e-8082-2a66ae178605" }
       ]
     }
   }
