@@ -31,8 +31,8 @@ const classObject = computed(() => {
 
 const copy = {
   future: {
-    title: "Bitcoin can be <br />thought of <br />as money <br />of the future.",
-    description: "Except it’s already here.<br />It is internet-native.<br />It is consequential.<br />It is resilient.<br/>But it needs more Design love.<br />More of a Design lens.",
+    title: "Bitcoin is here.",
+    description: "It is internet-native.<br />It is consequential.<br />It is resilient.<br/>But it needs more design love.<br />More of a design lens.",
     image: {
       file: "coin",
       alt: "Bitcoin coin",
@@ -41,8 +41,8 @@ const copy = {
     }
   },
   simpler: {
-    title: "Bitcoin needs to <wbr>be far simpler.",
-    description: "It needs more beauty.<br/>It needs to be made human.<br/><br/>Without better Design, bitcoin simply won’t become the everyday-money-of-the-future-for-the-whole-world it can become. <br/><br/>Yet, great Design is so much harder in the trust-minimized, decentralized, adversarial world of bitcoin. Everything is harder, more nuanced, more annoying. ",
+    title: "Bitcoin needs to <wbr>far simpler.",
+    description: "It needs more beauty.<br/>It needs to be made human.<br/><br/>Without thoughtful design, bitcoin won’t become what it could be–everyday money for the whole world.<br/><br/>But design here isn’t easy. It’s challenging. Because bitcoin is trust-minimized. Decentralized. Adversarial by design. Everything is more complex and nuanced.",
     image: {
       file: "note",
       alt: "Bitcoin coin",
@@ -52,7 +52,7 @@ const copy = {
   },
   tension: {
     title: "Design thrives in <wbr>resolving tensions.",
-    description: "We can and must find ways to balance security, privacy, trustlessness with the kind of simple, beautiful digital product experience the world has become accustomed to. The kind of experience we know is possible. <br/><br/>It’s time to bring Design craft to shaping bitcoin.<br/><br/>And bring bitcoin to the product designs we know and love so much. ",
+    description: "We can and must find ways to balance security, privacy, trustlessness with the kind of simple, beautiful digital product experience the world has become accustomed to. The kind of experience we know is possible. <br/><br/>It’s time to bring design craft to shaping bitcoin.",
     image: {
       file: "card",
       alt: "Bitcoin coin",
@@ -89,7 +89,7 @@ const content = computed(() => {
       line-height: 1.5;
       @include mixins.rs(
         ('font-size', 21, 21),
-        ('margin-top', 25, 50)
+        ('margin-top', 25, 30)
       );
     }
   }

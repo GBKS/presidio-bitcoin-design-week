@@ -14,8 +14,8 @@
     <div class="copy">
       <p>Presidio Bitcoin Design Week</p>
       <p>September 15-19, 2025</p>
-      <h2>Bitcoin is the future of money. <wbr>It needs more Design.</h2>
-      <p>We’re bringing together designers from the bitcoin community and designers from across Silicon Valley’s tech community to tackle how to beautify, simplify, amplify and human-ify bitcoin—our everyday money of the future.</p>
+      <h2>Bitcoin is the future of money. <wbr>It needs more design.</h2>
+      <p>We're bringing together designers from the bitcoin community and Silicon Valley to shape a future where bitcoin is not only understood but beautifully designed and effortlessly used.</p>
       <div class="options">
         <a href="#agenda" class="-button">View agenda</a>
       </div>
