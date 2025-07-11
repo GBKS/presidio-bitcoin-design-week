@@ -43,7 +43,9 @@ function setupObserver() {
   observer = new IntersectionObserver(
     (entries) => {
       entries.forEach(entry => {
-        isSticky.value = !entry.isIntersecting;
+        const position = window.scrollY || document.documentElement.scrollTop;
+
+        isSticky.value = position > 100 && !entry.isIntersecting;
       });
     },
     {
@@ -88,50 +90,46 @@ main {
     width: 100%;
   }
 
-  // @include mixins.media-query(small) {
-  //   .sentinel,
-  //   .agenda-button {
-  //     display: none;
-  //   }
-  // }
+  .sentinel {
+    width: 1px;
+    height: 1px;
+    pointer-events: none;
+    visibility: hidden;
+  }
+  
+  > .agenda-button {
+    position: fixed;
+    top: -80px;
+    right: 20px;
+    display: block;
+    text-decoration: none;
+    background-color: #CEE07D;
+    background-image: url('/images/button-back.png');
+    background-size: cover;
+    padding: 9px 25px;
+    font-size: 21px;
+    font-weight: 500;
+    line-height: 1.2;
+    color: var(--front);
+    transition: top 250ms animations.$ease;
 
-  // @include mixins.media-query(medium-up) {
-    .sentinel {
-      width: 1px;
-      height: 1px;
-      pointer-events: none;
-      visibility: hidden;
+    @include mixins.rs(
+      ('font-size', 19, 21),
+      ('padding-left', 20, 20),
+      ('padding-right', 20, 20),
+      ('padding-top', 9, 9),
+      ('padding-bottom', 9, 9)
+    );
+
+    &:hover {
+      color: rgba(var(--frontRGB), 0.5);
+      // transition: color 100ms animations.$ease;
     }
-    
-    .agenda-button {
-      position: fixed;
-      top: -80px;
-      right: 20px;
-      display: block;
-      text-decoration: none;
-      background-color: #CEE07D;
-      background-image: url('/images/button-back.png');
-      background-size: cover;
-      padding: 9px 25px;
-      font-size: 21px;
-      font-weight: 500;
-      line-height: 1.2;
-      color: var(--front);
-      transition: top 250ms animations.$ease;
 
-      @include mixins.rs(
-        ('font-size', 19, 21),
-        ('padding-left', 20, 20),
-        ('padding-right', 20, 20),
-        ('padding-top', 9, 9),
-        ('padding-bottom', 9, 9)
-      );
-
-      &.-sticky {
-        top: 20px;
-      }
+    &.-sticky {
+      top: 20px;
     }
-  // }
+  }
 }
 
 </style>
