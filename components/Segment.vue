@@ -1,8 +1,8 @@
 <template>
   <section :class="classObject">
     <img
-      :src="`/images/${content.image.file}.png`"
-      :srcset="`/images/${content.image.file}.png 1x, /images//${content.image.file}@2x.png 2x`"
+      :src="`/images/${content.image.file}.jpg`"
+      :srcset="`/images/${content.image.file}.jpg 1x, /images//${content.image.file}@2x.jpg 2x`"
       :alt="content.image.alt"
       :width="content.image.width"
       :height="content.image.height"
@@ -54,7 +54,7 @@ const copy = {
     title: "Design thrives in <wbr>resolving tensions.",
     description: "We can and must find ways to balance security, privacy, trustlessness with the kind of simple, beautiful digital product experience the world has become accustomed to. The kind of experience we know is possible. <br/><br/>It’s time to bring Design craft to shaping bitcoin.<br/><br/>And bring bitcoin to the product designs we know and love so much. ",
     image: {
-      file: "fabric",
+      file: "card",
       alt: "Bitcoin coin",
       width: 400,
       height: 400
@@ -88,7 +88,7 @@ const content = computed(() => {
     p {
       line-height: 1.5;
       @include mixins.rs(
-        ('font-size', 21, 24),
+        ('font-size', 21, 21),
         ('margin-top', 25, 50)
       );
     }
