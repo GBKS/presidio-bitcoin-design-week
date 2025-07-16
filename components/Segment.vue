@@ -41,7 +41,7 @@ const copy = {
     }
   },
   simpler: {
-    title: "Bitcoin needs to <wbr>far simpler.",
+    title: "Bitcoin needs to <wbr>be simpler.",
     description: "It needs more beauty.<br/>It needs to be made human.<br/><br/>Without thoughtful design, bitcoin won’t become what it could be–everyday money for the whole world.<br/><br/>But design here isn’t easy. It’s challenging. Because bitcoin is trust-minimized. Decentralized. Adversarial by design. Everything is more complex and nuanced.",
     image: {
       file: "note",
