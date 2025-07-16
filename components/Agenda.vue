@@ -96,7 +96,7 @@ const eventCopy = [
     disclaimer: "Admission is free. Space is limited.",
     button: {
       label: "Apply to attend",
-      url: "https://tally.so/r/wbRO1E"
+      url: "https://tally.so/r/wapdNZ"
     }
   },
   {
@@ -112,7 +112,7 @@ const eventCopy = [
     disclaimer: "Admission is free. Space is limited.",
     button: {
       label: "Apply to attend",
-      url: "https://tally.so/r/wbRO1E"
+      url: "https://tally.so/r/megRMk"
     }
   }
 ]
