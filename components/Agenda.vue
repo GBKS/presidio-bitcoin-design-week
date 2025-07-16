@@ -140,7 +140,7 @@ const eventCopy = [
       display: flex;
       flex-direction: column;
       align-items: center;
-      @include mixins.r('gap', 0, 50);
+      // @include mixins.r('gap', 0, 50);
 
       h2 {
         // font-family: 'Playfair Display Variable', serif;

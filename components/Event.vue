@@ -210,6 +210,7 @@ const expanded = ref(false)
     display: flex;
     gap: 50px;
     align-items: flex-start;
+    margin-top: 50px;
 
     .copy {
       flex-basis: 50%;
@@ -259,6 +260,11 @@ const expanded = ref(false)
       &.-mobile {
         display: none;
       }
+    }
+
+    & + .event {
+      padding-top: 50px;
+      border-top: 1px solid rgba(var(--frontRGB), 0.1);
     }
   }
 }
