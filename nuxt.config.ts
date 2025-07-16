@@ -43,7 +43,7 @@ export default defineNuxtConfig({
         { property: 'og:site_name', content: 'Presidio Bitcoin Design Week' },
         { property: 'og:image', content: 'https://event.bitcoin.design/preview.jpg' },
   
-        { name: 'twitter:card', content: 'summary' },
+        { name: 'twitter:card', content: 'summary_large_image' },
         { property: 'twitter:image', content: 'https://event.bitcoin.design/preview.jpg' },
         { property: 'twitter:title', content: 'Presidio Bitcoin Design Week' },
         { name: 'twitter:site', content: '@bitcoin_design' },
