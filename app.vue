@@ -16,6 +16,7 @@
     <Segment index="2" contentId="tension" />
     <hr />
     <Invite />
+    <Speakers />
     <Agenda
       id="agenda"
       title="All-day events"

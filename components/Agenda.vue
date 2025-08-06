@@ -1,5 +1,5 @@
 <template>
-  <section class="agenda" :style="styleObject">
+  <section class="agenda" :style="styleObject" id="agenda">
     <div class="all-day">
       <div class="content">
         <h2>{{ title }}</h2>

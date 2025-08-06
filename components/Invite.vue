@@ -1,5 +1,5 @@
 <template>
-  <div class="invite">
+  <div class="invite" id="invite">
     <h2>An invitation to leading <wbr>Silicon Valley designers</h2>
     <p><strong>Join us at <a href="https://www.presidiobitcoin.org" target="_blank" rel="noopener noreferrer">Presidio Bitcoin</a> from September 15 to 19 for one or more days of learning, thinking, and workshopping around Designing Future Money.</strong><br/><br/>We’ll dig into the biggest design challenges in bitcoin today, see how to build creative new experiences that use bitcoin, look at bitcoin-powered payments, come together to helpfully critique some real bitcoin products and explore the opportunities for remixing bitcoin with big tech.<br/><br/>Participation is free but application-only. Do you want to be part of a group of selected individuals who will together shape the future of money? This is going to be a small, high-calibre affair.<br/><br/>If you’d like to join us, see the agenda below and RSVP for the evening sessions, and apply to attend one or both of the all-day events.</p>
   </div>
