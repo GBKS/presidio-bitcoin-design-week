@@ -10,6 +10,7 @@
       >
         <img 
           :src="`/images/speakers/${speaker.image}.jpg`" 
+          :srcset="`/images/speakers/${speaker.image}.jpg 1x, /images/speakers/${speaker.image}@2x.jpg 2x`" 
           :alt="speaker.name"
         />
         <h3>{{ speaker.name }}</h3>
@@ -130,7 +131,7 @@ const speakers = [
       display: flex;
       flex-direction: column;
       align-items: center;
-      gap: 15px;
+      gap: 25px;
 
       img {
         width: 120px;
@@ -139,12 +140,12 @@ const speakers = [
       }
 
       h3 {
-        font-size: 19px;
+        font-size: 21px;
         text-align: center;
       }
 
       .links {
-        margin-top: 20px;
+        margin-top: 0px;
         display: flex;
         align-items: center;
         gap: 10px;
@@ -172,6 +173,10 @@ const speakers = [
       > div {
         flex-basis: 34%;
         flex-grow: 1;
+
+        h3 {
+          font-size: 19px;
+        }
       }
     }
   }
@@ -183,6 +188,12 @@ const speakers = [
       > div {
         flex-basis: 30%;
         flex-grow: 1;
+
+        img {
+          width: 200px;
+          height: 200px;
+          border-radius: 50%;
+        }
       }
 
       > div {
