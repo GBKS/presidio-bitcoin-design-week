@@ -58,6 +58,12 @@ const speakers = [
     li: 'https://www.linkedin.com/in/mogashninaidoo/'
   },
   {
+    name: 'Kyle Fletcher',
+    image: 'kf',
+    x: 'https://x.com/kyleluvsew',
+    li: 'https://www.linkedin.com/in/kylefletcher/'
+  },
+  {
     name: 'Christoph Ono',
     image: 'co',
     x: 'https://x.com/GBKS',
@@ -172,6 +178,13 @@ const speakers = [
 
   @include mixins.media-query(medium-up) {
     .items {
+      flex-wrap: wrap;
+
+      > div {
+        flex-basis: 30%;
+        flex-grow: 1;
+      }
+
       > div {
         // flex-basis: 17%;
       }
