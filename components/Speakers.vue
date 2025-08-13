@@ -14,7 +14,7 @@
           :alt="speaker.name"
         />
         <h3>{{ speaker.name }}</h3>
-        <p>{{ speaker.title }}<br/>{{ speaker.org }}</p>
+        <p>{{ speaker.title }}<template v-if="speaker.org"><br/>{{ speaker.org }}</template></p>
         <div class="links">
           <a
             v-if="speaker.x" 
@@ -92,12 +92,26 @@ const speakers = [
     li: 'https://www.linkedin.com/in/nickslaney/'
   },
   {
-    name: 'Christoph Ono',
-    image: 'co',
-    title: 'Designer',
-    org: 'Bitcoin Design Community',
-    x: 'https://x.com/GBKS',
-    li: 'https://www.linkedin.com/in/germanysbestkeptsecret/'
+    name: 'Conor Okus',
+    image: 'conor',
+    title: 'Product Manager',
+    org: 'Spiral',
+    x: 'https://x.com/ConorOkus',
+    li: 'https://www.linkedin.com/in/conorokus/'
+  },
+  {
+    name: 'Eric Cativo',
+    image: 'eric',
+    title: 'Bitcoin Product Designer',
+    x: 'https://x.com/uxerik_'
+  },
+  {
+    name: 'Stephen DeLorme',
+    image: 'stephen',
+    title: 'Product Designer',
+    org: 'Voltage',
+    x: 'https://x.com/StephenDeLorme',
+    li: 'https://www.linkedin.com/in/stephendelorme/'
   },
   {
     name: 'Mat Balez',
@@ -116,12 +130,12 @@ const speakers = [
     li: 'https://www.linkedin.com/in/stevenjlee/'
   },
   {
-    name: 'Conor Okus',
-    image: 'conor',
-    title: 'Product Manager',
-    org: 'Spiral',
-    x: 'https://x.com/ConorOkus',
-    li: 'https://www.linkedin.com/in/conorokus/'
+    name: 'Christoph Ono',
+    image: 'co',
+    title: 'Designer',
+    org: 'Bitcoin Design Community',
+    x: 'https://x.com/GBKS',
+    li: 'https://www.linkedin.com/in/germanysbestkeptsecret/'
   }
 ]
 
