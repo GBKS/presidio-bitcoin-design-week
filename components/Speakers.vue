@@ -14,6 +14,7 @@
           :alt="speaker.name"
         />
         <h3>{{ speaker.name }}</h3>
+        <p>{{ speaker.title }}<br/>{{ speaker.org }}</p>
         <div class="links">
           <a
             v-if="speaker.x" 
@@ -26,7 +27,7 @@
             </svg>
           </a>
           <a 
-              v-if="speaker.li"
+            v-if="speaker.li"
             :href="speaker.li" 
             target="_blank" 
             rel="noopener noreferrer"
@@ -55,38 +56,72 @@ const speakers = [
   {
     name: 'Mogashni Naidoo',
     image: 'mn',
+    title: 'UX Researcher',
+    org: 'Bitcoin Design Community',
     x: 'https://x.com/MouxDesign',
     li: 'https://www.linkedin.com/in/mogashninaidoo/'
   },
   {
+    name: 'Joshua Philippe',
+    image: 'joshua',
+    title: 'Head of Design and Brand',
+    org: 'Fold',
+    li: 'https://www.linkedin.com/in/joshuaphilippe/'
+  },
+  {
+    name: 'Jonathan Pollack',
+    image: 'jp',
+    title: 'Product Manager',
+    org: 'Block',
+    li: 'https://www.linkedin.com/in/jonathan-pollack-76582417/'
+  },
+  {
     name: 'Kyle Fletcher',
     image: 'kf',
+    title: 'Head of Brand Creative',
+    org: 'CashApp',
     x: 'https://x.com/kyleluvsew',
     li: 'https://www.linkedin.com/in/kylefletcher/'
   },
   {
+    name: 'Nick Slaney',
+    image: 'ns',
+    title: 'Founder',
+    org: 'moneydevkit',
+    x: 'https://x.com/nick_slaney',
+    li: 'https://www.linkedin.com/in/nickslaney/'
+  },
+  {
     name: 'Christoph Ono',
     image: 'co',
+    title: 'Designer',
+    org: 'Bitcoin Design Community',
     x: 'https://x.com/GBKS',
     li: 'https://www.linkedin.com/in/germanysbestkeptsecret/'
   },
   {
     name: 'Mat Balez',
     image: 'mb',
+    title: 'Product Manager',
+    org: 'Spiral',
     x: 'https://x.com/matbalez',
     li: 'https://www.linkedin.com/in/matbalez/'
   },
   {
-    name: 'Nick Slaney',
-    image: 'ns',
-    x: 'https://x.com/nick_slaney',
-    li: 'https://www.linkedin.com/in/nickslaney/'
-  },
-  {
     name: 'Steve Lee',
     image: 'sl',
+    title: 'Lead',
+    org: 'Spiral',
     x: 'https://x.com/moneyball',
     li: 'https://www.linkedin.com/in/stevenjlee/'
+  },
+  {
+    name: 'Conor Okus',
+    image: 'conor',
+    title: 'Product Manager',
+    org: 'Spiral',
+    x: 'https://x.com/ConorOkus',
+    li: 'https://www.linkedin.com/in/conorokus/'
   }
 ]
 
@@ -114,7 +149,7 @@ const speakers = [
     @include mixins.r('font-size', 27, 48);
   }
 
-  p {
+  > p {
     line-height: 1.5;
     @include mixins.rs(
       ('font-size', 19, 21),
@@ -131,7 +166,7 @@ const speakers = [
       display: flex;
       flex-direction: column;
       align-items: center;
-      gap: 25px;
+      gap: 10px;
 
       img {
         width: 120px;
@@ -140,12 +175,18 @@ const speakers = [
       }
 
       h3 {
+        margin-top: 10px;
         font-size: 21px;
         text-align: center;
       }
 
+      p {
+        font-size: 17px;
+        text-align: center;
+      }
+
       .links {
-        margin-top: 0px;
+        margin-top: 10px;
         display: flex;
         align-items: center;
         gap: 10px;
