@@ -45,8 +45,8 @@
     }
     
     strong {
-      @include mixins.r('font-size', 22, 27);
       font-weight: 400;
+      @include mixins.r('font-size', 22, 27);
     }
 
     & + p {
