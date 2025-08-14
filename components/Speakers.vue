@@ -68,13 +68,13 @@ const speakers = [
     org: 'Fold',
     li: 'https://www.linkedin.com/in/joshuaphilippe/'
   },
-  {
-    name: 'Jonathan Pollack',
-    image: 'jp',
-    title: 'Product Manager',
-    org: 'Block',
-    li: 'https://www.linkedin.com/in/jonathan-pollack-76582417/'
-  },
+  // {
+  //   name: 'Jonathan Pollack',
+  //   image: 'jp',
+  //   title: 'Product Manager',
+  //   org: 'Block',
+  //   li: 'https://www.linkedin.com/in/jonathan-pollack-76582417/'
+  // },
   {
     name: 'Kyle Fletcher',
     image: 'kf',
